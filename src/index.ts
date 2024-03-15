@@ -1,6 +1,7 @@
+#!/usr/bin/env node
 import * as puppeteer from "puppeteer";
-import chalk from "chalk";
-import  inquirer from "inquirer";
+import * as chalk from "chalk";
+import  * as inquirer from "inquirer";
 import * as fs from "fs";
 
 // Define a custom type for device names
@@ -87,7 +88,7 @@ async function takeScreenshot(page: puppeteer.Page, url: string, deviceType: str
 
 // Function to prompt the user to choose the device type (PC or Mobile)
 async function chooseDeviceType(): Promise<string> {
-    const deviceType = await inquirer.prompt([
+    const deviceType = await inquirer.default.prompt([
         {
             type: "list",
             name: "device",
@@ -101,7 +102,7 @@ async function chooseDeviceType(): Promise<string> {
 // Function to prompt the user to choose a mobile device
 async function chooseMobileDevice(): Promise<DeviceName | undefined> {
     const mobileDevices: DeviceName[] = Object.keys(puppeteer.devices) as DeviceName[];
-    const mobileDevice = await inquirer.prompt([
+    const mobileDevice = await inquirer.default.prompt([
         {
             type: "list",
             name: "device",
