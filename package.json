@@ -1,0 +1,31 @@
+{
+  "name": "ng-capture-screenshoots",
+  "version": "15.1.1",
+  "description": "Capture screenshots of webpages and generate a folder with screenshots",
+  "main": "dist/index.js",
+  "bin": {
+    "capture": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "capture": "node dist/index.js"
+  },
+  "keywords": [
+    "capture","screenshots", "generate",
+    "folder", "npm","Angular","package","typescript","NodeJS","javascript","screenshot","puppeteer","cli", "webpage",
+    "capture","puppeteer","chalk","inquirer", "AI", "Automatization", "Productive", "Testing",
+    "size","Ios","Ipad","Android","Device","mobile"
+  ],
+  "author": "Soufiane Asrih",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16",
+    "puppeteer": "^20.7.3"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "chalk": "^5.3.0"
+
+  }
+}
