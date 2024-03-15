@@ -1,6 +1,6 @@
 {
   "name": "ng-capture-screenshoots",
-  "version": "15.1.1",
+  "version": "15.1.2",
   "description": "Capture screenshots of webpages and generate a folder with screenshots",
   "main": "dist/index.js",
   "bin": {
